@@ -1,0 +1,164 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap_and_overrides.css
+ *= require fonts
+ *= require app
+ *= require chosen
+ */
+
+.sponsored-header {
+    background: #333;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 -1px 0 black;
+    border: 1px solid black;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#2D2D2D));
+    background-image: -webkit-linear-gradient(#444, #2D2D2D);
+    background-image: -moz-linear-gradient(#444, #2D2D2D);
+    background-image: -ms-linear-gradient(#444, #2D2D2D);
+    background-image: -o-linear-gradient(#444, #2D2D2D);
+    background-image: linear-gradient(#444, #2D2D2D);
+}
+
+.leaf-add{
+  color: #fff;
+}
+
+.extra-margin-top{
+  margin-top: 42px;
+}
+
+.meta-links{
+  a{
+    color: #9c9c9c;
+    &:hover{
+      text-decoration: none;
+      color: #0088bb;
+    }
+  }
+}
+
+.branch-box{
+  width: 560px;
+  margin: 0px auto;
+  background-color: white;
+  border: 1px solid #CCC;
+  margin-top: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  .title{
+    min-height: 20px;
+    position: relative;
+    padding: 9px 15px;
+    border-bottom: 1px solid #EEE;
+  }
+  .light_header {
+    color: #999;
+    margin-right: 25px;
+    line-height: 30px;
+  }
+  .shadow-wrap {
+    position: absolute;
+    height: 5px;
+    min-height: 5px;
+    bottom: -5px;
+    width: 100%;
+    margin-left: -15px;
+    border-top: 1px solid white;
+  }
+  .shadow-top {
+    height: 6px;
+    border-top: 1px solid #CCC;
+  }
+  .form-body{
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
+  }
+  label {
+    color: #898989;
+    font-size: 12px;
+  }
+  textarea, #branch_name, #branch_branch_name {
+    background-color: #F4F4F4;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    margin: 10px 0;
+    height: 30px;
+  }
+  .footer-actions{
+    padding: 14px 15px 15px;
+    margin-bottom: 0;
+    text-align: right;
+    background-color: whiteSmoke;
+    border-top: 1px solid #DDD;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: inset 0 1px 0 white;
+    -moz-box-shadow: inset 0 1px 0 #ffffff;
+    box-shadow: inset 0 1px 0 white;
+    position: relative;
+    z-index: 999;
+    background-color: transparent;
+    border-top: 1px solid white;
+    .shadow-wrap {
+      position: absolute;
+      height: 5px;
+      min-height: 5px;
+      top: -1px;
+      width: 100%;
+      margin-left: -15px;
+      border-bottom: 1px solid white;
+      .shadow-bottom {
+        height: 3px;
+        border-bottom: 1px solid #CCC;
+      }
+    }
+  }
+  #branch_category_ids{
+    width: 100%;
+    background-color: #F4F4F4;
+    height: 50px;
+  }
+}
+
+#branch_description{
+  min-height: 80px;
+}
+
+.extra-padding-top{
+  padding-top: 40px;
+}
+
+.left-floter{
+  display: inline;
+  float: right;
+  font-weight: bold;
+}
+
+.error{
+  color: #8b0000;
+  font-family: OpenSansExtraboldItalic;
+}
+
+.white{
+  color: #fff;
+}
+
+.chzn-container-multi .chzn-choices .search-field input{
+  height: 28px;
+}

@@ -1,0 +1,30 @@
+<div class=" trees">
+  <header class="ui-mini-header letter_pressed">
+    <h5 class="light_header p"><i class="icon-money"></i> Sponsored
+    </h5>
+  </header>
+  <ul class="tree_list nav">
+    <% sponsored.each do |s| %>
+    <li class="info_block">
+      <a class="avatar">
+        <img src="/assets/image_6.jpg" height="50" width="50">
+      </a>
+      <div class="info">
+        <h6 class="light_header ui-inline-text"><%= link_to s.name, s %></h6>
+        <p class="meta">
+          <span class="tree"><i class=" icon-sitemap"></i> <span class=""> <%= s.children.size %></span></span>
+          <span class="dot"></span>
+          <span class="leaf"><i class="icon-leaf"></i> <span class=""> <%= s.memberships_count %></span></span>
+        </p>
+        <div class="categories">
+          <p class=" meta">Categories:
+            <% s.categories.each do |category| %>
+            <%= link_to category.name, category %>,
+            <% end %>
+          </p>
+        </div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+</div>

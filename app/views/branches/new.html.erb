@@ -1,0 +1,10 @@
+<% if params[:branch_id] %>
+   <%= content_for :publisher_content do %>
+      <%= render 'form' %>
+   <% end %>
+<% else %>
+    <section class=" grayed  center_panel extra-padding-top">
+    <% @title = "Create A New Branch" %>
+    <%= render 'form' %>
+    </section>
+<% end %>

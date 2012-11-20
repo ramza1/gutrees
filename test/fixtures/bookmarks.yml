@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  booked_broadcast: 1
+
+two:
+  user: 
+  booked_broadcast: 1

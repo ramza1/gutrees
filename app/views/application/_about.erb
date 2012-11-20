@@ -1,0 +1,12 @@
+<div id="aboutModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3><%= branch.name.humanize %></h3>
+  </div>
+  <div class="modal-body">
+    <p><%= simple_format branch.description %></p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+  </div>
+</div>

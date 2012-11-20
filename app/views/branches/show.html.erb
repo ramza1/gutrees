@@ -1,0 +1,53 @@
+<%= content_for(:publisher_content) do %>
+
+    <div class="row">
+      <div class="span8  branch_post">
+        <% if current_user && current_user.can_edit?(@branch) %>
+            <%= content_for :button do %>
+                <div class="divider-horizontal"></div>
+                <div class="btns">
+                  <button class="btn btn-warning btn-block"  data-target="#post-modal" data-toggle="modal">
+                    <i class="icon-plus"></i> new post</button>
+                </div>
+            <% end %>
+
+            <%= render "post_form", branch: @branch %>
+        <% end %>
+        <div class="posts" id="broadcast_for_<%= dom_id(@branch)%>">
+
+        <% if @branch.private? && current_user && current_user.member_of?(@branch) %>
+           <% if @broadcasts.any? %>
+              <%= render @broadcasts %>
+           <% else %>
+               <p class="alert alert-info">
+                 No broadcasts at the moment
+               </p>
+           <% end %>
+        <% elsif !@branch.private? %>
+              <% if @broadcasts.any? %>
+                  <%= render @broadcasts %>
+              <% else %>
+                  <p class="alert alert-info">
+                    No broadcasts at the moment
+                  </p>
+              <% end %>
+        <% else %>
+
+              <p class="alert alert-error">
+                This is a private branch. Only members of this branch are allowed to view broadcasts, members and receive sms broadcasts
+                from this branch. <%= link_to branch_memberships_path(@branch), :method => 'post', class: "btn btn-mini btn-warning" do %>
+            <span class="leaf-add">
+              <i class="icon-leaf"></i>
+              <i class="icon-plus"></i>
+            </span>
+                <% end %>
+              </p>
+        <% end %>
+        </div>
+      </div>
+      <div class="span4 side_bar">
+        <%= render "recommended_branches", branch: @branch %>
+        <%= render "sponsored_branches" %>
+      </div>
+    </div>
+<% end %>

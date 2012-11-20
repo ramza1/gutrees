@@ -1,0 +1,10 @@
+<div class="span8 posts">
+<%= render :partial => "users/user_broadcasts", :collection => @broadcasts, as: :broadcast %>
+</div>
+<div class="span4 side_bar">
+
+<%= render "branches", user: @user %>
+<%= render "sponsored_branches" %>
+
+
+</div>

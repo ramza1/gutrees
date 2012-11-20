@@ -1,0 +1,15 @@
+class UsersController < ApplicationController
+  def show
+    @user = User.find(params[:id])
+    @broadcasts = @user.broadcasts.order("created_at desc").includes(:branch)
+  end
+
+ def branch_ins
+  @user = User.find(params[:id])
+  @branch_ins = @user.branches
+ end
+
+def my_branches
+
+end
+end

@@ -1,0 +1,43 @@
+<div class="branch-box">
+  <div class="title">
+    <h5 class="light_header ui-text-inline letter_pressed">
+      <%= @title %>
+    </h5>
+    <div class="shadow-wrap">
+      <div class="shadow-top"></div>
+    </div>
+  </div>
+  <div class="form-body">
+  <%= simple_form_for(@branch) do |f| %>
+      <%= f.error_notification %>
+
+      <%#= render @branch.parent if @branch.parent %>
+    <div class="post_input_container">
+      <div class="post_input_inner">
+        <div class="post_input">
+        <%= f.hidden_field :parent_id %>
+        <%= f.input :name %>
+        <%= f.input :description, input_html: {rows: 3} %>
+        <%= f.association :categories, {multiple: true} %>
+        <%= f.input :icon, as: :file, label: "Branch Logo" %>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="footer-actions">
+          <div class="shadow-wrap">
+            <div class="shadow-bottom"></div>
+          </div>
+          <%= f.button :submit, class: "btn btn-primary" %>
+          <% if @branch.new_record? && @branch.parent_id.present? %>
+            <%= link_to "Back", @branch.parent, class: "btn" %>
+          <% elsif @branch.new_record? %>
+              <%= link_to "Cancel", branches_path, class: "btn" %>
+        <% else %>
+              <%= link_to "Back", @branch, class: "btn" %>
+          <% end %>
+        </div>
+  <% end %>
+</div>
+
+

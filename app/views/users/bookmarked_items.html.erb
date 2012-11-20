@@ -1,0 +1,11 @@
+<div class="span8 posts">
+  <%= render :partial => "users/user_broadcasts", :collection => @broadcasts, as: :broadcast %>
+</div>
+<div class="span4 side_bar">
+  <% unless @user.branches.empty? %>
+      <%= render "branches", user: @user %>
+  <% end %>
+  <%= render "sponsored_branches" %>
+
+
+</div>

@@ -1,0 +1,21 @@
+<div class=" trees">
+  <header class="ui-mini-header letter_pressed">
+    <h5 class="light_header p"><i class="icon-thumbs-up"></i> Recommended
+    </h5>
+  </header>
+  <ul class="tree_list nav">
+    <% branch.branches_recommended.each do |r_branch| %>
+        <%= render "branch_list", branch: r_branch %>
+    <% end %>
+  </ul>
+  <p class="meta anchor">
+    <span class="badge badge-warning"><%= branch.branches_recommended.size  %></span>
+    <% if branch.branches_recommended.size > 4 %>
+    more
+    <a href="#" class=""> see all <i class="icon-caret-down"></i></a>
+    <% end %>
+  </p>
+</div>
+
+
+

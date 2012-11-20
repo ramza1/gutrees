@@ -1,0 +1,76 @@
+<li class="item polaroid">
+
+  <header class="ui-mini-header">
+    <h5 class="light_header p ui-inline-text letter_pressed">
+      <i class="icon-sitemap"></i>
+      <%= link_to branch.name.humanize, branch_home_path(branch) %>
+    </h5>
+  </header>
+  <div class="brand_tree">
+    <table class="table">
+      <tbody>
+      <tr>
+        <td rowspan="2" class="rt">
+          <div class="brand_link">
+            <%= image_tag branch.icon(:box), alt: branch.try(:name) %>
+          </div>
+        </td>
+        <td class="bt">
+          <div class="">
+            <div class="stats meta">
+              <p>
+
+                <span class="tree"><i class=" icon-sitemap"></i> <%= branch.children.size %></span><span class="dot">&nbsp;</span>
+
+                <span class="branch-ins leaf"><i class="icon-leaf"></i>&nbsp;<%= branch.memberships_count %></span>
+            </div>
+            <p class="meta">created <span class="date"><%= time_ago_in_words(branch.created_at) %> ago </span></p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="meta">
+          <div class="meta manager" >
+            <a class="avatar">
+              <img width="32" height="32"src="<%= branch.user.image %>" class="avatar_shadow ui-icon"/>
+            </a>
+            <%= link_to branch.creator.name, branch.user  %>
+            <p class="meta important"> <a class="role"><i class="icon-user-md"></i>head</a></p>
+          </div>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="recent_post">
+    <h6 class="latest meta"><em>latest...</em></h6>
+    <article class="image_link">
+      <header>
+        <% if branch.broadcasts.any? %>
+            <h6 class="ui-inline-text light_header"><%= link_to branch.broadcasts.last.title, branch %></a></h6>
+        <% else %>
+            <h6 class="ui-inline-text light_header"><a>Nothing to display</a></h6>
+        <% end %>
+      </header>
+      <% if branch.broadcasts.any? %>
+          <p class=" meta">
+            <span class="time" title="<%= branch.broadcasts.last.created_at.strftime("%m-%d-%Y") %>"><i class="icon-time"></i><%= branch.broadcasts.last.created_at.strftime("%I:%M")  %> - <%= time_ago_in_words branch.broadcasts.last.created_at  %> ago</span>
+            <span class="separator">&nbsp;
+            <% if branch.broadcasts.last.photo.present? %>
+              |  &nbsp;</span>
+            <span class="post_type"><i class="icon-picture"></i> Photo</span>
+            <% end %>
+          </p>
+      <% end %>
+    </article>
+  </div>
+
+  <div class="categories">
+    <p class=" meta">Categories:
+      <% branch.categories.each do |category| %>
+          <%= link_to category.name, category %>,
+      <% end %>
+    </p>
+  </div>
+</li>

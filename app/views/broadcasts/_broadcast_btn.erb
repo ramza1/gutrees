@@ -1,0 +1,36 @@
+<div class="btn-group">
+  <a class="btn  dropdown-toggle btn-small" data-toggle="dropdown" href="#">
+    <i class=" icon-caret-down"></i>
+  </a>
+  <ul class="dropdown-menu top_arrowed">
+    <li>
+      <% if current_user && current_user.bookmarked?(broadcast)%>
+          <%= link_to remove_bookmark_broadcast_path(broadcast) do %>
+              <i class="icon-bookmark"></i>
+              remove from bookmark
+          <% end %>
+      <% else %>
+      <%= link_to bookmark_broadcast_path(broadcast) do %>
+        <i class="icon-bookmark"></i>
+        bookmark
+      <% end %>
+      <% end %>
+    </li>
+    <li>
+      <% if current_user && current_user.flagged?(broadcast, :report)%>
+          <%= link_to toggle_flag_broadcast_path(broadcast) do %>
+              <i class="icon-flag"></i>
+              cancel report
+          <% end %>
+      <% else %>
+
+      <%= link_to toggle_flag_broadcast_path(broadcast) do %>
+                <i class="icon-flag"></i>
+                report
+      <% end %>
+
+      <% end %>
+
+    </li>
+  </ul>
+</div>

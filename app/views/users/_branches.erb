@@ -1,0 +1,21 @@
+<div class=" trees">
+  <header class="ui-mini-header letter_pressed">
+    <h5 class="light_header p"><i class="icon-sitemap"></i> Branch ins
+    </h5>
+  </header>
+  <ul class="tree_list nav">
+    <% user.branches.first(4).each do |branch| %>
+        <%= render "branch_list", branch: branch %>
+    <% end %>
+  </ul>
+  <p class="meta anchor">
+    <span class="badge badge-warning"><%= user.branches.size  %></span>
+    <% if user.branches.size > 4 %>
+    more
+    <a href="#" class=""> see all <i class="icon-caret-down"></i></a>
+    <% end %>
+  </p>
+</div>
+
+
+

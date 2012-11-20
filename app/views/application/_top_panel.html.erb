@@ -1,0 +1,122 @@
+<div class="top_panel">
+  <div class="container-fluid">
+    <div class="stamp">
+      <div class="btm_shadow_l">
+        <div class="shadow-top"></div>
+      </div>
+      <div class="stamp_wrap">
+        <div class="stamp_tp"></div>
+        <div class="stamp_bt"></div>
+        <div class="stamp_ct">
+          <%= image_tag branch.icon(:thumb), "width"=>"140", "height"=>"140" %>
+        </div>
+      </div>
+    </div>
+    <div class="user_tp letter_pressed">
+      <div class="user_meta">
+        <div class="btn-toolbar" style="margin-top: 0;">
+          <a class="btn " href="#">
+            <i class=" icon-arrow-up"></i>
+          </a>
+               <span class="btn-group">
+           <a class="btn dropdown-toggle " data-toggle="dropdown" href="#">
+             Action
+             <span class="caret"></span>
+           </a>
+           <ul class="top_arrowed dropdown-menu">
+             <li>
+               <% if current_user%>
+                   <% if branch.membership_requests.count('*', :conditions => ['user_id = ?', current_user.id]) > 0 %>
+                       <p class="alert alert-info">you requested join this branch</p>
+                   <% end %>
+                   <% if current_user.member_of? branch %>
+                       <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"} do %>
+                                <span class="leaf-remove">
+                 <i class="icon-leaf"></i>
+                 <i class=" icon-remove-sign"></i>
+                 </span>
+                           branch out
+                       <% end %>
+                   <% else %>
+                       <%= link_to branch_memberships_path(branch), :method => 'post' do %>
+                                   <span class="leaf-remove">
+                 <i class="icon-leaf"></i>
+                 </span>
+                           branch in
+                       <% end %>
+                   <% end %>
+               <% else %>
+                   <%= link_to branch_memberships_path(branch), :method => 'post' do %>
+                                   <span class="leaf-remove">
+                 <i class="icon-leaf"></i>
+                 </span>
+                       branch in
+                   <% end %>
+               <% end %>
+             </li>
+             <% if current_user && current_user.can_edit?(branch) %>
+                 <li>
+                   <%= link_to  new_branch_path(:branch_id => branch) do %>
+                       <i class="icon-sitemap"></i>
+                       create a sub branch
+                   <% end %>
+                 </li>
+             <% end %>
+             <li>
+               <%= link_to  new_branch_path do %>
+                   <i class="icon-sitemap"></i>
+                   start a branch
+               <% end %>
+             </li>
+             <li>
+               <%= link_to  branches_path do %>
+                   <i class="icon-eye-open"></i>
+                   view all branches
+               <% end %>
+             </li>
+           </ul>
+         </span>
+        </div>
+      </div>
+      <%= form_tag  search_box_path, :method => 'get', :class => "form-inline search pull-left"  do %>
+          <div class="input-append">
+            <%= text_field_tag :q, @q, :placeholder => "search", :class => "input-xlarge" %>
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+          </div>
+      <% end %>
+      <% if current_user%>
+          <% if branch.membership_requests.count('*', :conditions => ['user_id = ?', current_user.id]) > 0 %>
+              <p>you requested join this branch</p>
+          <% end %>
+          <% if current_user.member_of? branch %>
+              <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"}, class: "btn btn-warning", title: "Branch out", :rel => "tooltip" do %>
+                        <span class="leaf-add">
+                 <i class="icon-leaf"></i>
+                 <i class=" icon-minus"></i>
+                 </span>
+              <% end %>
+          <% else %>
+              <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning", title: "Branch in", :rel => "tooltip" do %>
+                          <span class="leaf-add">
+                 <i class="icon-leaf"></i>
+                 <i class=" icon-plus"></i>
+                 </span>
+              <% end %>
+          <% end %>
+      <% else %>
+          <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning", title: "Branch in", :rel => "tooltip" do %>
+                          <span class="leaf-add">
+                 <i class="icon-leaf"></i>
+                 <i class=" icon-plus"></i>
+                 </span>
+          <% end %>
+      <% end %>
+      <h5 class="light_header name ui-text-inline"> <span class="verified"><i class="icon-ok"></i></span> <%= branch.name %></h5>
+      <div class="btm_shadow_r span10">
+        <div class="shadow-top"></div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

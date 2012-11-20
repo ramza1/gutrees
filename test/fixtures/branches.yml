@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  memberships_count: 1
+  user: 
+  private: false
+
+two:
+  name: MyString
+  description: MyString
+  memberships_count: 1
+  user: 
+  private: false

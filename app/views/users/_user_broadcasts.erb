@@ -1,0 +1,36 @@
+<div class="post">
+  <a class="avatar lt">
+    <%= image_tag broadcast.branch.icon(:thumb), class: "avatar_shadow light-rounded", "width"=>"50px", "height"=>"50px" %>
+  </a>
+  <div class="post_container left_arrow">
+    <header>
+      <div class="post_title">
+        <h5 class="light_header"><%= link_to broadcast.title, branch_broadcast_path(broadcast.branch, broadcast) %></h5>
+        <p class=" meta">
+          <span class="time" title="<%= broadcast.created_at.strftime("%m-%d-%Y") %>"><i class="icon-time"></i> <%= broadcast.created_at.strftime("%I:%M")  %> </span>
+          <span class="separator">&nbsp;  |  &nbsp;</span>
+          <span class="post_type"><i class="icon-picture"></i> Photo</span>
+        </p>
+      </div>
+    </header>
+    <div class="divider-horizontal"></div>
+    <div class="post_body">
+      <p>
+        <%= truncate broadcast.message, :length => 150 %>
+      </p>
+
+    </div>
+    <% if broadcast.photo.present? %>
+        <a class="post_image">
+          <div class="shadow-top"></div>
+          <%= image_tag broadcast.photo(:thumb) %>
+        </a>
+    <% end %>
+    <div class="read-more">
+                     <span class="meta ">
+                      <span class="badge badge-warning"><%= broadcast.comments_count %></span> <i class="icon-comments"></i> comments
+                       <a href="<%= url_for branch_broadcast_path(broadcast.branch, broadcast) %>" class="important_link">Read more <i class="icon-caret-right"></i></a>
+                     </span>
+    </div>
+  </div>
+</div>

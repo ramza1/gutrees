@@ -1,0 +1,23 @@
+<section class=" grayed  center_panel extra-padding-top">
+  <div id="main" class="container-fluid">
+    <div class="branch-box">
+      <div class="title">
+        <h5 class="light_header ui-text-inline letter_pressed">
+          Log in or Sign Up for free    <span style="float: right;"><i class="icon-cog"></i></span>
+        </h5>
+        <div class="shadow-wrap">
+          <div class="shadow-top"></div>
+        </div>
+      </div>
+      <div class="form-body">
+        <p style="text-align: center; font-size: 15px;">
+          <%= link_to user_omniauth_authorize_path(:google_oauth2), class: "btn btn-warning" do %>
+              <b><i class=" icon-google-plus"></i> Log in or Sign up Now</b>
+          <% end %>
+        </p>
+
+      </div>
+    </div>
+      </div>
+</section>
+

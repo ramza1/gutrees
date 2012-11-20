@@ -1,0 +1,65 @@
+<aside class=" left_panel extra-padding-top">
+  <div class="left_panel_wrap">
+    <div class="inner">
+      <div class="a_info">
+        <div class="a_nav">
+          <header class="ui-mini-header">
+            <h5 class="light_header p ui-inline-text letter_pressed">
+              Browse
+            </h5>
+          </header>
+          <ul class="nav nav-list">
+            <li class="<% if action_name == "index" %> active <% end %>" >
+              <a href="<%= url_for branches_path %>">
+                Latest
+              </a>
+            </li>
+            <li class="<% if action_name == "popular" %> active <% end %>"><a href="<%= url_for root_url %>">
+              Popular</a></li>
+            <li class="<% if action_name == "trending" %> active <% end %>"><a href="<%= url_for trending_path %>">Trending</a></li>
+          </ul>
+
+          <header >
+            <div class="divider-horizontal"></div>
+            <h5 class="light_header p ui-inline-text letter_pressed">
+              <span class="label label-warning">Sponsored</span>
+            </h5>
+            <div class="divider-horizontal"></div>
+          </header>
+          <div class="sponsored letter_pressed">
+            <ul class="tree_list nav">
+              <% Branch.sponsored_branched.each do |sponsored| %>
+              <li class="info_block">
+                <a class="avatar">
+                  <%= image_tag(sponsored.icon(:thumb), :class => "avatar_shadow little-rounded") %>
+                </a>
+                <div class="info">
+                  <h6 class="light_header ui-inline-text"><%= link_to sponsored.name.humanize, sponsored %></h6>
+                  <p class="meta">
+                    <span class="tree"><i class=" icon-sitemap"></i> <span class=""><%= sponsored.children.size %></span></span>
+                    <span class="dot"></span>
+                    <span class="leaf"><i class="icon-leaf"></i> <span class=""> <%= sponsored.memberships_count %></span></span>
+                  </p>
+                </div>
+              </li>
+
+              <li class="divider-horizontal"></li>
+             <% end %>
+
+            </ul>
+          </div>
+          <ul class="nav nav-list" style="display: none;">
+            <li><a href="#">Church</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li class="divider-horizontal"></li>
+            <li><a href="#">more</a></li>
+            <li class="divider-horizontal"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,11 @@
+<section class=" grayed  center_panel extra-padding-top">
+  <div id="main" class="container-fluid">
+    <ul id="tiles">
+      <% if @branches.empty? %>
+          <p class="alert alert-info">No branches found</p>
+      <% else %>
+          <%= render @branches %>
+      <% end %>
+    </ul>
+  </div>
+</section>

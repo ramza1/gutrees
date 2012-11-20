@@ -1,0 +1,50 @@
+<div class="top_panel">
+  <div class="container-fluid">
+    <div class="stamp">
+      <div class="btm_shadow_l">
+        <div class="shadow-top"></div>
+      </div>
+    </div>
+    <div class="user_tp letter_pressed">
+      <div class="user_meta">
+        <div class="btn-toolbar" style="margin-top: 0;">
+          <a class="btn " href="#">
+            <i class=" icon-arrow-up"></i>
+          </a>
+               <span class="btn-group">
+           <a class="btn dropdown-toggle " data-toggle="dropdown" href="#">
+             Action
+             <span class="caret"></span>
+           </a>
+           <ul class="top_arrowed dropdown-menu">
+             <%= render "about_links" %>
+           </ul>
+         </span>
+        </div>
+      </div>
+      <%= form_tag  search_box_path, :method => 'get', :class => "form-inline search pull-left"  do %>
+          <div class="input-append">
+            <%= text_field_tag :q, @q, :placeholder => "search", :class => "input-xlarge" %>
+            <button type="submit" class="btn"><i class="icon-search"></i></button>
+          </div>
+      <% end %>
+      <div class="left-floter ui-text-inline">
+        <div class="btn-toolbar" style="margin-top: 0;">
+          <a class="btn btn-warning" href="<%= new_branch_path %>">
+            <i class="icon-sitemap"></i>  Create A Branch
+          </a>
+               <span class="btn-group">
+           <a class="btn btn-info"href="http://mail.google.com/support/bin/answer.py?hl=en&answer=106015" target="_blank">
+             <i class="icon-play"></i> Get Started
+           </a>
+         </span>
+        </div>
+      </div>
+      <div class="btm_shadow_r span10">
+        <div class="shadow-top"></div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

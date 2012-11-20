@@ -1,0 +1,41 @@
+<aside class=" left_panel">
+  <div class="shadow-top"></div>
+  <div class="left_panel_wrap">
+    <div class="inner">
+
+      <div class="a_info">
+        <div class="a_nav">
+          <div class="divider-horizontal"></div>
+          <ul class="nav nav-list">
+            <li <% if action_name == "show" %>class="active" <% end %>>
+              <%= link_to user_path(user) do %>
+                <i class="icon-th-list"></i>
+                Latest
+              <% end %>
+            </li>
+            <li <% if action_name == "bookmarked_items" %>class="active" <% end %>>
+              <%= link_to bookmarked_items_user_path(user) do %>
+                  <i class="icon-bookmark"></i>&nbsp;Bookmarks
+              <% end %>
+             </li>
+            <li <% if action_name == "branch_ins" %>class="active" <% end %>>
+              <%= link_to branch_ins_user_path(user) do %>
+                <i class="icon-leaf"></i>&nbsp;Branch ins<label class="badge badge-warning"><%= user.branches.size %></label>
+              <% end %>
+            </li> 
+            <li <% if action_name == "my_branches" %>class="active" <% end %>>
+              <%= link_to my_branches_user_path(user) do %>
+                <i class="icon-sitemap"></i>&nbsp;My Branches<label class="badge badge-success"><%= user.owned_branches.size %></label>
+              <% end %>
+            </li>   
+          </ul>
+          <div class="divider-horizontal"></div>
+          <div class="btns">
+            <a href="<%= url_for new_branch_path %>" class="btn btn-warning btn-block"><i class="icon-plus"></i> create a branch</a>
+          </div>
+          <div class="divider-horizontal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>

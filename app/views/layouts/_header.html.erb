@@ -1,0 +1,31 @@
+<div class="navbar navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <%= link_to root_url,:class => "brand" do%>
+         <img src="/assets/branch_icon.png"/>
+      <% end %>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          <li>
+            <% if current_user %>
+                <a href="<%= url_for current_user %>">
+                  <i class="icon-user"></i>
+                  Hi <%= current_user.name %>
+                </a>
+          </li>
+                <li class="divider-vertical"></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+            <% else %>
+          <li>
+              <a href="<%= url_for user_omniauth_authorize_path(:google_oauth2) %>"><i class=" icon-google-plus"></i> Login with google</a></li>
+            <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

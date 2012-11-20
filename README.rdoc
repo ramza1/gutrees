@@ -1,0 +1,22 @@
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ramza1/gutrees.git
+git push -u origin master
+Push an existing repository from the command line
+
+git remote add origin https://github.com/ramza1/gutrees.git
+git push -u origin master
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => 'localhost:3000',
+      :user_name            => 'ramzauchenna@gmail.com',
+      :password             => 'okaforuchenna11',
+      :authentication       => 'plain',
+      :enable_starttls_auto => true  }
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }

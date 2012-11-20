@@ -1,0 +1,34 @@
+<%= content_for :publisher_content do %>
+    <div class="branch-box" xmlns="http://www.w3.org/1999/html">
+      <div class="title">
+        <h5 class="light_header ui-text-inline letter_pressed">
+          Privacy Settings   <span style="float: right;"><i class="icon-cog"></i></span>
+        </h5>
+        <div class="shadow-wrap">
+          <div class="shadow-top"></div>
+        </div>
+      </div>
+      <div class="form-body">
+        <p>
+          Here you can set how you want people to branch into your branch. By making your branch a private,
+          people will have to send a branch in request of which you have to accept their requests before they can branch in.
+        </p>
+
+      </div>
+            <div class="footer-actions">
+              <div class="shadow-wrap">
+                <div class="shadow-bottom"></div>
+              </div>
+              <%= link_to toggle_privacy_branch_path(@branch), class: "btn btn-warning white", style: "color: #fff" do %>
+                  <% if @branch.private? %>
+                      <i class="icon-share"></i> Make Public Branch
+                  <% else %>
+
+                      <i class="icon-lock"></i> Make Private Branch
+                  <% end %>
+              <% end %>
+              <%= link_to "Proceed to Branch", branch_path(@branch), class: "btn" %>
+            </div>
+
+    </div>
+<% end %>

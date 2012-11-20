@@ -1,0 +1,33 @@
+<div class="post">
+  <a class="avatar lt">
+    <%= image_tag branch.icon(:thumb), class: "avatar_shadow light-rounded", "width"=>"50px", "height"=>"50px" %>
+  </a>
+  <div class="post_container left_arrow">
+    <header>
+      <div class="post_title">
+        <h5 class="light_header"><%= link_to branch.name, branch_home_path(branch) %></h5>
+        <p class=" meta">
+          <span class="time" title="<%= branch.created_at.strftime("%m-%d-%Y") %>"><i class="icon-time"></i> <%= branch.created_at.strftime("%I:%M")  %> </span>
+        </p>
+      </div>
+    </header>
+    <div class="divider-horizontal"></div>
+    <div class="post_body">
+      <p>
+        <%= truncate branch.description, :length => 150 %>
+      </p>
+
+    </div>
+
+    <div class="read-more">
+                     <span class="meta ">
+                      <span class="badge"><%= branch.broadcasts_count %></span> <i class="icon-signal"></i> broadcasts
+                       <a href="<%= url_for branch_path(branch) %>" class="important_link">learn more <i class="icon-caret-right"></i></a>
+                     </span>
+<span class="meta ">
+                      <span class="badge badge-warning"><%= branch.memberships_count %></span> <i class="icon-leaf"></i> brnach ins
+                      
+                     </span>
+    </div>
+  </div>
+</div>
