@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-require "delayed/recipes"
 
 server "208.68.37.172", :web, :app, :db, primary: true
 
@@ -8,7 +7,7 @@ set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :rails_env, "production" #added for delayed job
+
 
 set :scm, "git"
 set :repository, "git@github.com:ramza1/#{application}.git"
@@ -50,8 +49,5 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
-  after "deploy:stop",    "delayed_job:stop"
-  after "deploy:start",   "delayed_job:start"
-  after "deploy:restart", "delayed_job:restart"
 end
 
