@@ -103,7 +103,7 @@
       <file leaf-file-name="nginx.conf" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="19" selection-start="362" selection-end="362" vertical-scroll-proportion="0.40472177">
+            <state line="27" column="45" selection-start="621" selection-end="621" vertical-scroll-proportion="0.68296796">
               <folding />
             </state>
           </provider>
@@ -339,7 +339,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cf" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -769,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="362" selection-end="362" vertical-scroll-proportion="0.40472177">
+        <state line="27" column="45" selection-start="621" selection-end="621" vertical-scroll-proportion="0.68296796">
           <folding />
         </state>
       </provider>
