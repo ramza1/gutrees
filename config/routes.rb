@@ -1,4 +1,4 @@
-require "sidekiq/web"
+#require "sidekiq/web"
 
 Gutrees::Application.routes.draw do
   get "comments/create"
