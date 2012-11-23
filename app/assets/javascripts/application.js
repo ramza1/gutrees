@@ -66,3 +66,4 @@ jQuery(window).ready(
         jQuery('.notice').delay(6000).slideUp( 'slow');
     }
 );
+

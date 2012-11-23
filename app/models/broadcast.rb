@@ -12,9 +12,8 @@ class Broadcast < ActiveRecord::Base
 
 
   def send_mail_to_members
+
     broadcast = self
-    self.branch.users.find_each do |user|
-       News.news_info(user, broadcast).deliver
-    end
+    MailsWorker.perform_async(self.branch.id, broadcast.id)
   end
 end

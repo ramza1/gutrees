@@ -9,7 +9,7 @@ Gutrees::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -69,11 +69,15 @@ Gutrees::Application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => 'gutrees.com',
-      :user_name            => 'xxx@gmail.com',
-      :password             => 'xxx',
+      :domain               => 'gmail.com',
+      :user_name            => 'ramzauchenna@gmail.com',
+      :password             => 'okaforuchenna11',
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
+
+  config.middleware.use ExceptionNotifier,
+                        sender_address:  "no_reply@gutrees.com",
+                        exception_recipients: "ramzauchenna@gmail.com"
 
   config.action_mailer.default_url_options = { :host => 'gutrees.com' }
 end

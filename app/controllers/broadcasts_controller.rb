@@ -4,7 +4,7 @@ class BroadcastsController < ApplicationController
   # GET /broadcasts/1
   # GET /broadcasts/1.json
   def show
-    @broadcast = Broadcast.find(params[:id])
+    @broadcast = Broadacast.find(params[:id])
     @branch_details = @broadcast.branch
 
     respond_to do |format|
@@ -24,10 +24,6 @@ class BroadcastsController < ApplicationController
     end
   end
 
-  # GET /broadcasts/1/edit
-  def edit
-    @broadcast = Broadcast.find(params[:id])
-  end
 
   # POST /broadcasts
   # POST /broadcasts.json
@@ -42,26 +38,12 @@ class BroadcastsController < ApplicationController
         format.js
       else
         format.html { render action: "new" }
-        format.js
+        format.js  {render 'error'}
       end
     end
   end
 
-  # PUT /broadcasts/1
-  # PUT /broadcasts/1.json
-  def update
-    @broadcast = Broadcast.find(params[:id])
 
-    respond_to do |format|
-      if @broadcast.update_attributes(params[:broadcast])
-        format.html { redirect_to @broadcast, notice: 'Broadcast was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @broadcast.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   # DELETE /broadcasts/1
   # DELETE /broadcasts/1.json

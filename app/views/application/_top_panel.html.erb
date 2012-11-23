@@ -89,7 +89,7 @@
               <span>you requested join this branch</span>
           <% end %>
           <% if current_user.member_of? branch %>
-              <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"}, class: "btn btn-warning", title: "Branch out", :rel => "tooltip", class: "white" do %>
+              <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"}, class: "btn btn-warning", title: "Branch out", :rel => "tooltip" do %>
                         <span class="leaf-add">
                  <i class="icon-leaf"></i>
                  <i class=" icon-minus"></i>

@@ -31,18 +31,25 @@ class BranchesController < ApplicationController
   # GET /branches/1.json
   def show
     @branch = Branch.find_by_permalink(params[:id])
-    @branch_details = @branch
-    @members = @branch.users.thumbnails
-    @broadcasts = @branch.broadcasts.order("created_at desc").includes(:comments)
-    @member_of = current_user.member_of?(@branch)  if current_user
-    @branch.make_trend(ip = request.env['REMOTE_ADDR'])
-    @broadcast = @branch.broadcasts.new
-    impressionist(@branch)
-    impression = @branch.impressionist_count(:filter=>:ip_address)
-    @branch.countdown(impression)
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @branch }
+    if @branch
+      @branch_details = @branch
+      @members = @branch.users.thumbnails
+      @broadcasts = @branch.broadcasts.order("created_at desc").includes(:comments)
+      @member_of = current_user.member_of?(@branch)  if current_user
+      @branch.make_trend(ip = request.env['REMOTE_ADDR'])
+      @broadcast = @branch.broadcasts.new
+      impressionist(@branch)
+      impression = @branch.impressionist_count(:filter=>:ip_address)
+      @branch.countdown(impression)
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @branch }
+      end
+    else
+      respond_to do |format|
+        format.html {redirect_to root_url, notice: "Sorry that branch does not exists"}
+        format.json { render json: @branch }
+      end
     end
   end
 

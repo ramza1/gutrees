@@ -32,7 +32,11 @@ gem 'remotipart'
 gem 'simple_form'
 gem 'impressionist'
 gem 'make_flaggable', :git => 'git://github.com/cavneb/make_flaggable.git'
-gem 'daemons'
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
+gem 'twitter-bootstrap-rails-confirm'
+gem 'exception_notification', :require => 'exception_notifier'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

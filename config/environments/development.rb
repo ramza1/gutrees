@@ -44,5 +44,11 @@ Gutrees::Application.configure do
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
 
+  config.middleware.use ExceptionNotifier,
+                        sender_address:  "no_reply@gutrees.com",
+                        exception_recipients: "ramzauchenna@gmail.com"
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+
 end

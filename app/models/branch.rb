@@ -4,6 +4,7 @@ class Branch < ActiveRecord::Base
   validates :name, :description, :user_id, :presence => true
   validates_uniqueness_of :name
   validates_uniqueness_of :permalink, :message => "Branch name has already been taken"
+  validates_exclusion_of :name, :in => %w( admin superuser sidekiq ), :message => "You don't belong here"
 
   is_impressionable
 
