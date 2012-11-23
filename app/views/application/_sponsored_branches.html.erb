@@ -7,7 +7,11 @@
     <% sponsored.each do |s| %>
     <li class="info_block">
       <a class="avatar">
-        <img src="/assets/image_6.jpg" height="50" width="50">
+        <% if s.icon.present? %>
+            <%= image_tag s.icon(:thumb), alt: s.try(:name) %>
+        <% else %>
+            <img src="/assets/image_5.jpg">
+        <% end %>
       </a>
       <div class="info">
         <h6 class="light_header ui-inline-text"><%= link_to s.name, s %></h6>
@@ -19,7 +23,7 @@
         <div class="categories">
           <p class=" meta">Categories:
             <% s.categories.each do |category| %>
-            <%= link_to category.name, category %>,
+            <%= link_to category.name, category %>
             <% end %>
           </p>
         </div>

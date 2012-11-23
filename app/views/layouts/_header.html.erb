@@ -10,7 +10,15 @@
          <img src="/assets/branch_icon.png"/>
       <% end %>
       <div class="nav-collapse">
+        <ul class="nav pull-left">
+          <li><%= link_to "Home", root_url %></li>
+          <li class="divider-vertical"></li>
+          <li><%= link_to "Branches", branches_url %></li>
+          <li class="divider-vertical"></li>
+          <li><%= link_to "Trending", trending_url %></li>
+        </ul>
         <ul class="nav pull-right">
+          <li><%= link_to "Create a branch", new_branch_path %></li>
           <li>
             <% if current_user %>
                 <a href="<%= url_for current_user %>">
@@ -18,6 +26,7 @@
                   Hi <%= current_user.name %>
                 </a>
           </li>
+
                 <li class="divider-vertical"></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
             <% else %>

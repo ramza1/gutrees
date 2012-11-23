@@ -4,7 +4,7 @@ class BroadcastsController < ApplicationController
   # GET /broadcasts/1
   # GET /broadcasts/1.json
   def show
-    @broadcast = Broadacast.find(params[:id])
+    @broadcast = Broadcast.find(params[:id])
     @branch_details = @broadcast.branch
 
     respond_to do |format|

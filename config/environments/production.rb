@@ -69,15 +69,15 @@ Gutrees::Application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => 'gmail.com',
-      :user_name            => 'xxx@gmail.com',
-      :password             => 'xxx',
+      :domain               => 'gutrees.com',
+      :user_name            => 'support@gutrees.com',
+      :password             => 'okaforuchenna11',
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
 
   config.middleware.use ExceptionNotifier,
                         sender_address:  "no_reply@gutrees.com",
-                        exception_recipients: "xxx@gmail.com"
+                        exception_recipients: "gutrees@gmail.com"
 
   config.action_mailer.default_url_options = { :host => 'gutrees.com' }
 end

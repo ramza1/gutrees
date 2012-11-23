@@ -8,7 +8,11 @@
         <div class="stamp_tp"></div>
         <div class="stamp_bt"></div>
         <div class="stamp_ct">
-          <img src="<%= user.image %>" width="140" height="140">
+          <% if user.image.present? %>
+            <img src="<%= user.image %>" width="140" height="140">
+          <% else %>
+              <img src="/assets/icon.png" width="140" height="140">
+          <% end %>
         </div>
       </div>
     </div>

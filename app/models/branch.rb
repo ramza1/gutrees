@@ -4,13 +4,13 @@ class Branch < ActiveRecord::Base
   validates :name, :description, :user_id, :presence => true
   validates_uniqueness_of :name
   validates_uniqueness_of :permalink, :message => "Branch name has already been taken"
-  validates_exclusion_of :name, :in => %w( admin superuser sidekiq ), :message => "You don't belong here"
+  validates_exclusion_of :name, :in => %w( admin superuser sidekiq trending), :message => "You don't belong here"
 
   is_impressionable
 
   has_ancestry
   has_many :memberships, :dependent => :destroy
-  has_attached_file :icon, :styles => {:box => "50x80#", :thumb => "100x100#"}
+  has_attached_file :icon, :styles => {:box => "300x300>", :thumb => "100x100#"}
   has_many :broadcasts
   has_many :membership_requests, :dependent => :destroy
   has_many :all_broadcasts, :class_name => "Broadcast", :foreign_key => "branch_id"

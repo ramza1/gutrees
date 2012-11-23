@@ -23,102 +23,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_user.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/branches/_user.html.erb">
+      <file leaf-file-name="trend.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/trend.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user_broadcasts.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_user_broadcasts.erb">
+      <file leaf-file-name="branch.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/branch.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.375">
+            <state line="12" column="56" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="branch_ins.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/branch_ins.html.erb">
+      <file leaf-file-name="_branch.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/branches/_branch.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="79" column="48" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-49.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_branch_ins.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/_branch_ins.erb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="0.3100616">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberships/_user.html.erb">
+      <file leaf-file-name="_aside.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_aside.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_private_view.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberships/_private_view.html.erb">
+      <file leaf-file-name="_top_panel.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_top_panel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1352390600000" expanded="true" signature="188:482" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="247:445" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="494:740" placeholder="..." />
-                <marker date="1352390600000" expanded="false" signature="643:660" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="846:1337" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="899:1003" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="935:987" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="1025:1326" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="1385:1812" placeholder="..." />
-                <marker date="1352390600000" expanded="true" signature="1679:1779" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_public_view.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/memberships/_public_view.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="11" column="46" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_recommended_branches.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/branches/_recommended_branches.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="98" selection-start="234" selection-end="234" vertical-scroll-proportion="-3.125">
+            <state line="9" column="34" selection-start="327" selection-end="327" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <file leaf-file-name="_branch_list.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_branch_list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="20" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
+            <state line="3" column="40" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="_sponsored_branches.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/application/_sponsored_branches.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="50" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.7678245">
+            <state line="25" column="50" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-15.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="broadcast.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/broadcast.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,22 +123,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/broadcasts/error.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/broadcasts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/workers/mails_worker.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/broadcast.rb" />
-        <option value="$PROJECT_DIR$/app/views/application/_post_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/broadcasts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/branches/_user.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/memberships/_user.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/omniauth_callbacks_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/_top_info_panel.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/broadcasts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/memberships/_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/branches/_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/branches/privacy_settings.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/models/branch.rb" />
+        <option value="$PROJECT_DIR$/app/views/application/_top_panel.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/application/_branch_list.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/application/_sponsored_branches.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/branches/_branch.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
       </list>
     </option>
   </component>
@@ -432,6 +421,24 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gutrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gutrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -469,6 +476,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gutrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gutrees" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -484,10 +513,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config/initializers" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
       <recent name="$PROJECT_DIR$/vendor/assets/stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -813,142 +842,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/broadcasts/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/branches/sub_branches.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/broadcasts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/branches/privacy_settings.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+        <state line="1" column="27" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.625">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_left_panel.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_top_info_panel.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="20" selection-start="321" selection-end="338" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/branches/admins.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding>
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1352626225000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/branches/_user.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
+        <state line="6" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_user_broadcasts.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/branch_ins.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_branch_ins.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberships/_user.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="70" selection-end="70" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberships/_private_view.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1352390600000" expanded="true" signature="188:482" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="247:445" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="494:740" placeholder="..." />
-            <marker date="1352390600000" expanded="false" signature="643:660" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="846:1337" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="899:1003" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="935:987" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="1025:1326" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="1385:1812" placeholder="..." />
-            <marker date="1352390600000" expanded="true" signature="1679:1779" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/memberships/_public_view.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="98" selection-start="234" selection-end="234" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="20" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="50" selection-start="3018" selection-end="3018" vertical-scroll-proportion="0.7678245">
+        <state line="79" column="54" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/trend.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/broadcast.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/branch.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="56" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_aside.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/branches/_recomended_box.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_top_panel.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="46" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_branch_list.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_sponsored_branches.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-15.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/branches/_recommended_branches.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="327" selection-end="327" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/branches/_branch.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="48" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-49.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="0.3100616">
           <folding />
         </state>
       </provider>

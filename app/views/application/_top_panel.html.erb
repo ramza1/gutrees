@@ -8,7 +8,11 @@
         <div class="stamp_tp"></div>
         <div class="stamp_bt"></div>
         <div class="stamp_ct">
-          <%= image_tag branch.icon(:thumb), "width"=>"140", "height"=>"140" %>
+          <% if branch.icon.present? %>
+              <%= image_tag branch.icon(:thumb), alt: branch.try(:name) %>
+          <% else %>
+              <img src="/assets/image_5.jpg">
+          <% end %>
         </div>
       </div>
     </div>

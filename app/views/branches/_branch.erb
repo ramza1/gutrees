@@ -12,7 +12,11 @@
       <tr>
         <td rowspan="2" class="rt">
           <div class="brand_link">
-            <%= image_tag branch.icon(:box), alt: branch.try(:name) %>
+            <% if branch.icon.present? %>
+              <%= image_tag branch.icon(:box), alt: branch.try(:name) %>
+            <% else %>
+              <img src="/assets/image_5.jpg">
+            <% end %>
           </div>
         </td>
         <td class="bt">
@@ -32,7 +36,11 @@
         <td class="meta">
           <div class="meta manager" >
             <a class="avatar">
-              <img width="32" height="32"src="<%= branch.user.image %>" class="avatar_shadow ui-icon"/>
+              <% if branch.user.image.present? %>
+                 <img width="32" height="32"src="<%= branch.user.image %>" class="avatar_shadow ui-icon"/>
+              <% else %>
+                  <img width="32" height="32"src="/assets/icon.png" class="avatar_shadow ui-icon"/>
+              <% end %>
             </a>
             <%= link_to branch.creator.name, branch.user  %>
             <p class="meta important"> <a class="role"><i class="icon-user-md"></i>head</a></p>
@@ -69,7 +77,7 @@
   <div class="categories">
     <p class=" meta">Categories:
       <% branch.categories.each do |category| %>
-          <%= link_to category.name, category %>,
+          <%= link_to category.name, category %>
       <% end %>
     </p>
   </div>

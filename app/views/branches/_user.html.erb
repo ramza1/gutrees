@@ -1,6 +1,10 @@
 <li class="user">
   <a class="avatar">
-    <img src="<%= user.image %>" height="50" width="50">
+    <% if user.image.present? %>
+        <img src="<%= user.image %>" height="50" width="50">
+    <% else %>
+        <img src="/assets/icon.png" height="50" width="50">
+    <% end %>
   </a>
   <div class="uinfo">
     <h6 class="light_header ui-inline-text"><%= link_to user.name, user %></h6>

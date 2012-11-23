@@ -23,7 +23,6 @@ class User < ActiveRecord::Base
   def self.find_for_google_oauth2(access_token, signed_in_resource=nil)
     data = access_token.info
     user = User.where(:email => data["email"]).first
-
     unless user
       user = User.create(name: data["name"],
                          email: data["email"],
@@ -33,6 +32,7 @@ class User < ActiveRecord::Base
     end
     user
   end
+
 
   def member_of?(branch)
     memberships.find_by_branch_id(branch.id)
@@ -90,4 +90,6 @@ class User < ActiveRecord::Base
   def bookmarked?(broadcast)
     self.booked_broadcasts.include? broadcast
   end
+
+
 end

@@ -1,6 +1,10 @@
 <li class="info_block">
   <a class="avatar">
-    <img src="<%= branch.icon(:thumb) %>" height="50" width="50">
+    <% if branch.icon.present? %>
+        <%= image_tag branch.icon(:thumb), alt: branch.try(:name) %>
+    <% else %>
+        <img src="/assets/image_5.jpg">
+    <% end %>
   </a>
   <div class="info">
     <h6 class="light_header ui-inline-text"><%= link_to branch.name, branch  %></h6>
