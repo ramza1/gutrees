@@ -9,9 +9,10 @@
         <div class="stamp_bt"></div>
         <div class="stamp_ct">
           <% if branch.icon.present? %>
-              <%= image_tag branch.icon(:thumb), alt: branch.try(:name) %>
+              <%= image_tag branch.icon(:thumb), "width"=>"140", "height"=>"140" %>
           <% else %>
-              <img src="/assets/image_5.jpg">
+              <img src="/assets/image_5.jpg" width="140" height="140">
+
           <% end %>
         </div>
       </div>

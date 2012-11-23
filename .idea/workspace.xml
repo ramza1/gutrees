@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="0.3100616">
+            <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="-6.2916665">
               <folding />
             </state>
           </provider>
@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_top_panel.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_top_panel.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/application/_top_panel.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="46" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.625">
+            <state line="13" column="66" selection-start="512" selection-end="512" vertical-scroll-proportion="0.40041068">
               <folding />
             </state>
           </provider>
@@ -134,11 +134,11 @@
         <option value="$PROJECT_DIR$/app/views/branches/privacy_settings.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/models/branch.rb" />
-        <option value="$PROJECT_DIR$/app/views/application/_top_panel.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_branch_list.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/_sponsored_branches.html.erb" />
         <option value="$PROJECT_DIR$/app/views/branches/_branch.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/application/_top_panel.html.erb" />
       </list>
     </option>
   </component>
@@ -912,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/application/_top_panel.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="46" selection-start="387" selection-end="387" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/_branch_list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="40" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.875">
@@ -949,7 +942,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="0.3100616">
+        <state line="20" column="60" selection-start="884" selection-end="884" vertical-scroll-proportion="-6.2916665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/application/_top_panel.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="66" selection-start="512" selection-end="512" vertical-scroll-proportion="0.40041068">
           <folding />
         </state>
       </provider>
