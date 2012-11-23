@@ -26,7 +26,9 @@ body {
 // See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
 //
 // Example:
-// @linkColor: #ff0000;
+@linkColor: #333;
+@linkColorHover: #9c9c9c;
+
 [class^="icon-"], [class*="icon-"] {
     background-image: none;
     vertical-align: baseline;
@@ -47,10 +49,10 @@ abbr[title] {
   color: #8b0000;
 }
 
-a{
-  &:hover,&:active,&:link{
-    color: #333;
-  }
+a:hover{
+  text-decoration: none;
 }
+
+
 
 

@@ -24,7 +24,6 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-gem 'similus'
 gem 'ancestry'
 gem 'paperclip'
 gem 'omniauth-google-oauth2'

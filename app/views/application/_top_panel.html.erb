@@ -86,17 +86,17 @@
       <% end %>
       <% if current_user%>
           <% if branch.membership_requests.count('*', :conditions => ['user_id = ?', current_user.id]) > 0 %>
-              <p>you requested join this branch</p>
+              <span>you requested join this branch</span>
           <% end %>
           <% if current_user.member_of? branch %>
-              <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"}, class: "btn btn-warning", title: "Branch out", :rel => "tooltip" do %>
+              <%= link_to branch_membership_path(branch, current_user), :method => 'delete', data: {confirm: "Are you sere"}, class: "btn btn-warning", title: "Branch out", :rel => "tooltip", class: "white" do %>
                         <span class="leaf-add">
                  <i class="icon-leaf"></i>
                  <i class=" icon-minus"></i>
                  </span>
               <% end %>
           <% else %>
-              <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning", title: "Branch in", :rel => "tooltip" do %>
+              <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning white", title: "Branch in", :rel => "tooltip" do %>
                           <span class="leaf-add">
                  <i class="icon-leaf"></i>
                  <i class=" icon-plus"></i>
@@ -104,7 +104,7 @@
               <% end %>
           <% end %>
       <% else %>
-          <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning", title: "Branch in", :rel => "tooltip" do %>
+          <%= link_to branch_memberships_path(branch), :method => 'post', class: "btn btn-warning white", :rel => "tooltip", title: "Branch in" do %>
                           <span class="leaf-add">
                  <i class="icon-leaf"></i>
                  <i class=" icon-plus"></i>

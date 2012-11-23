@@ -28,7 +28,7 @@
           <div class="shadow-wrap">
             <div class="shadow-bottom"></div>
           </div>
-          <%= f.button :submit, class: "btn btn-primary" %>
+          <%= f.button :submit, class: "btn btn-primary white" %>
           <% if @branch.new_record? && @branch.parent_id.present? %>
             <%= link_to "Back", @branch.parent, class: "btn" %>
           <% elsif @branch.new_record? %>

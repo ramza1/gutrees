@@ -5,11 +5,6 @@ body{
   font-size: 12px;
   background: #F1F1F1;
 }
-a{
-  &:hover,&:active,&:link{
-    color: #333;
-  }
-}
 .content{
 
   position: relative;
@@ -1210,6 +1205,7 @@ h1,h2,h3,h4,h5,legend{
     }
     .post_body{
       margin: 10px 20px;
+      word-wrap: break-word;
     }
     .post_image{
       display: block;

@@ -14,7 +14,7 @@ class Broadcast < ActiveRecord::Base
   def send_mail_to_members
     broadcast = self
     self.branch.users.find_each do |user|
-       News.delay.news_info(user, broadcast)
+       News.news_info(user, broadcast).deliver
     end
   end
 end

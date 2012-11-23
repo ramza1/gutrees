@@ -38,11 +38,11 @@ Gutrees::Application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => 'gutrees.com',
-      :user_name            => 'xxx@gmail.com',
-      :password             => 'xxx',
+      :domain               => 'gmail.com',
+      :user_name            => 'ramzauchenna@gmail.com',
+      :password             => 'okaforuchenna11',
       :authentication       => 'plain',
       :enable_starttls_auto => true  }
 
-  config.action_mailer.default_url_options = { :host => 'gutrees.com' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
