@@ -7,7 +7,7 @@ class Broadcast < ActiveRecord::Base
   scope :no_title, where(:title => nil)
   validates :message, :title, :presence => true
 
-  #after_create :send_mail_to_members
+  after_create :send_mail_to_members
   make_flaggable :report
 
 
