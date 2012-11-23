@@ -11,9 +11,9 @@ class Broadcast < ActiveRecord::Base
   make_flaggable :report
 
 
-  #def send_mail_to_members
+  def send_mail_to_members
 
-    #broadcast = self
-    #MailsWorker.perform_async(self.branch.id, broadcast.id)
-  #end
+    broadcast = self
+    MailsWorker.perform_async(self.branch.id, broadcast.id)
+  end
 end

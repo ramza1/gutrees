@@ -32,9 +32,9 @@ gem 'remotipart'
 gem 'simple_form'
 gem 'impressionist'
 gem 'make_flaggable', :git => 'git://github.com/cavneb/make_flaggable.git'
-#gem 'sidekiq'
-#gem 'sinatra', require: false
-#gem 'slim'
+gem 'sidekiq'
+gem 'sinatra', require: false
+gem 'slim'
 gem 'twitter-bootstrap-rails-confirm'
 gem 'exception_notification', :require => 'exception_notifier'
 
