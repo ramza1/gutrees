@@ -7,13 +7,13 @@ class Broadcast < ActiveRecord::Base
   scope :no_title, where(:title => nil)
   validates :message, :title, :presence => true
 
-  after_create :send_mail_to_members
+  #after_create :send_mail_to_members
   make_flaggable :report
 
 
-  def send_mail_to_members
+  #def send_mail_to_members
 
-    broadcast = self
-    MailsWorker.perform_async(self.branch.id, broadcast.id)
-  end
+    #broadcast = self
+    #MailsWorker.perform_async(self.branch.id, broadcast.id)
+  #end
 end

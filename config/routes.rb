@@ -56,10 +56,10 @@ Gutrees::Application.routes.draw do
   match '/policy', :to => 'home#policy',:as=> :policy
   match '/faq', :to => 'home#faq',:as=> :faq
 
-  constraint = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.is_admin? }
-  constraints constraint do
-    mount Sidekiq::Web => '/sidekiq'
-  end
+  #constraint = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.is_admin? }
+  #constraints constraint do
+    #mount Sidekiq::Web => '/sidekiq'
+  #end
 
   match "/search" => "branches#search", as: :search_box
   match "/:id" => "branches#show", :as => :branch_home

@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require 'sidekiq/capistrano'
+#require 'sidekiq/capistrano'
 
 server "192.34.56.48", :web, :app, :db, primary: true
 
@@ -24,6 +24,7 @@ namespace :deploy do
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
       run "/etc/init.d/unicorn_#{application} #{command}"
+      run "#{sudo} nohup /etc/init.d/redis-server #{command}"
     end
   end
 
