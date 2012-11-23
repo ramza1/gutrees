@@ -53,7 +53,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="36" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.93591905">
+            <state line="36" column="13" selection-start="830" selection-end="830" vertical-scroll-proportion="0.80944353">
               <folding />
             </state>
           </provider>
@@ -134,11 +134,11 @@
         <option value="$PROJECT_DIR$/app/controllers/broadcasts_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/workers/mails_worker.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/broadcast.rb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -846,7 +846,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="36" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.93591905">
+        <state line="36" column="13" selection-start="830" selection-end="830" vertical-scroll-proportion="0.80944353">
           <folding />
         </state>
       </provider>
